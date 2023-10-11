@@ -1,4 +1,8 @@
-<input type="text" #input>
+<input nz-input [nzSize]="'small'" type="text" #input>
 
-<button (click)="operacionFiltrar(input.value)">BUSCAR PRODUCTO</button>
-<button (click)="mostrarTodo()"> MOSTRAR TODO</button>
+
+
+<div>
+<button  nz-button nzType="primary"(click)="operacionFiltrar(input.value)">BUSCAR PRODUCTO</button>
+<button class="button2" nz-button nzType="primary" (click)="mostrarTodo()"> MOSTRAR TODO</button>
+</div>

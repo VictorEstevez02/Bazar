@@ -1,0 +1,43 @@
+.logo {
+  height: 32px;
+  background: white (255, 255, 255, 0.2);
+  color: white;
+  margin: 16px;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+
+
+.lista-tarjetas {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  flex: 1;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  color: rgb(249, 249, 252);
+  width: 300px;
+  margin-left: 400px;
+  margin-top: 40px;
+}
+
+

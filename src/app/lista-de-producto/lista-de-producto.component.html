@@ -1,6 +1,11 @@
-<label>{{titulo}}</label>
-<app-filtrar-producto [lista]="listaDeProductos" (filtrarProducto)="operacionProducto($event)"></app-filtrar-producto>
-<li *ngFor=" let producto of filtrarProductos">
- <a [routerLink]="['/detalleDeProducto',producto.id]">{{producto.nombre}}</a>
 
+<app-filtrar-producto [lista]="listaDeProductos" (filtrarProducto)="operacionProducto($event)"></app-filtrar-producto>
+
+<ul *ngFor=" let producto of filtrarProductos">
+  <li>
+ <a [routerLink]="['/detalleDeProducto',producto.id]">{{producto.nombre}}</a>
 </li>
+
+</ul>
+
+

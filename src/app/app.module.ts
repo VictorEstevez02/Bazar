@@ -7,6 +7,18 @@ import { ListaDeProductoComponent } from './lista-de-producto/lista-de-producto.
 import { FiltrarProductoComponent } from './filtrar-producto/filtrar-producto.component';
 import { HomeComponent } from './home/home.component';
 import { DetalleDeProductoComponent } from './detalle-de-producto/detalle-de-producto.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { IconsProviderModule } from './icons-provider.module';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzMenuModule } from 'ng-zorro-antd/menu';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzListModule } from 'ng-zorro-antd/list';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzBreadCrumbModule } from 'ng-zorro-antd/breadcrumb';
+
 
 @NgModule({
   declarations: [
@@ -18,9 +30,24 @@ import { DetalleDeProductoComponent } from './detalle-de-producto/detalle-de-pro
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    IconsProviderModule,
+    NzLayoutModule,
+    NzMenuModule,
+    NzButtonModule,
+    NzInputModule,
+    NzListModule,
+    NzIconModule.forRoot([]),
+    NzBreadCrumbModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+  bootstrap: [AppComponent],
+
+  providers: [
+
+  ]
 })
 export class AppModule { }
